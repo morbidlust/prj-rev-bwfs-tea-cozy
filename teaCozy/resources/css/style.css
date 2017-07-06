@@ -1,0 +1,140 @@
+
+
+/* Get rid of default margins and add some padding */
+h2, h3, h4 {
+  margin: 0px;
+  padding: 10px;
+}
+
+/* Set basic parameters and remove default margings as outlined in spec */
+body {
+  margin: 0px;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Define header/logo/nav parameters  */
+header {
+  display: flex;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  z-index: 10;
+  align-items: center;
+  background-color: black;
+}
+
+#logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding-left: 10px;
+  background-color: black;
+}
+
+#logo img {
+  height: 50px;
+  background-color: black;
+}
+
+/* Override default "a" parameters */
+nav a {
+  color: seashell;
+}
+
+/* Spread the nav links out some to match spec */
+nav span {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+
+/* Center all major divs */
+#mission, #month, #locations, #contact {
+  margin: 0 auto;
+}
+
+/* Mission section */
+#mission {
+  padding-top: 70px;
+  width: 1200px;
+  height: 700px;
+  background-image: url("../images/img-mission-background.jpg");
+  align-items: center;
+  display: flex;
+}
+
+#mission #text {
+  background-color: black;
+  align-items: center;
+  width: 1200px;
+}
+
+/* Tea of the Month */
+#month {
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+#teas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tea {
+  padding: 5px;
+}
+
+.tea img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+
+/* Locations */
+#locations {
+  width: 1200px;
+  height: 500px;
+  background-image: url("../images/img-locations-background.jpg");
+  padding-top: 70px;
+}
+
+#sites {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.location {
+  width: 300px;
+  margin: 5px 20px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+
+/* Contact */
+#contact {
+  height: 200px;
+}
+
+/* Copyright */
+#copyright {
+  text-align: left;
+  margin-left: 20px;
+}
